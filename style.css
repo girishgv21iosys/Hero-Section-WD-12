@@ -23,7 +23,7 @@ p {
 }
 .wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 2rem;
 }
 .wrapper .one {
@@ -35,7 +35,7 @@ p {
   align-self: center;
 }
 .wrapper img {
-  width: 90%;
+  width: calc(90% - 50px);
 }
 button {
   padding: 10px 25px;
@@ -54,7 +54,7 @@ button:hover {
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
-  padding-top: 10%;
+  padding-top: 102px;
 }
 .mouse {
   border: 1.5px solid white;
@@ -63,9 +63,21 @@ button:hover {
   text-align: center;
   width: 12px;
 }
+@media (max-width: 900px) {
+  .main {
+    padding: 5rem 3rem;
+  }
+  h1 {
+    font-size: 45px;
+  }
+  .mouse {
+    border: 1.5px solid black;
+    color: black;
+  }
+}
 @media (max-width: 700px) {
   .main {
-    padding: 5rem 2rem;
+    padding: 5rem 4rem;
     text-align: center;
   }
 }
@@ -92,9 +104,9 @@ button:hover {
     color: black;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1700px) {
   body {
-    max-width: 1700px;
+    width: 1700px;
     margin-left: auto;
     margin-right: auto;
   }
