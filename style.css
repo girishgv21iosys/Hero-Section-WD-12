@@ -33,6 +33,7 @@ p {
 .wrapper .two {
   justify-self: right;
   align-self: center;
+  text-align: right;
 }
 .wrapper img {
   width: calc(90% - 50px);
@@ -80,6 +81,9 @@ button:hover {
     padding: 5rem 4rem;
     text-align: center;
   }
+  .wrapper .two {
+    text-align: center;
+  }
 }
 @media (max-width: 425px) {
   .wrapper {
@@ -109,9 +113,5 @@ button:hover {
     width: 1700px;
     margin-left: auto;
     margin-right: auto;
-  }
-  .main {
-    padding: 10px auto;
-    justify-self: center;
   }
 }
